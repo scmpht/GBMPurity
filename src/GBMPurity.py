@@ -11,7 +11,7 @@ import pandas as pd
 import numpy as np
 from typing import Tuple, List, Optional
 import sys
-sys.path.insert(1, './modelling')
+sys.path.insert(1, './src/modelling')
 from torch_models import MLP2h
 from utils import tpm
 
@@ -31,7 +31,7 @@ def check_data(df: pd.DataFrame) -> Tuple[pd.DataFrame, List[str]]:
     warnings = []
 
     # Import required genes
-    gene_lengths = pd.read_csv("../model/input-genes-lengths.csv")
+    gene_lengths = pd.read_csv("./model/input-genes-lengths.csv")
     genes = gene_lengths['feature_name']
 
     # Check Dimensions
@@ -92,7 +92,7 @@ def gbm_purity_inference(data_path: str) -> pd.DataFrame:
         pd.DataFrame: DataFrame with sample names and predicted purities.
     """
     # Import gene lengths
-    gene_lengths = pd.read_csv("../model/input-genes-lengths.csv")
+    gene_lengths = pd.read_csv("./model/input-genes-lengths.csv")
     lengths = gene_lengths['feature_length'].values
 
     # Load and transform input data
@@ -109,7 +109,7 @@ def gbm_purity_inference(data_path: str) -> pd.DataFrame:
     X = np.log2(tpm(data.values, lengths) + 1)
 
     # Import model
-    model = torch.load("../model/GBMPurity.pt")
+    model = torch.load("./model/GBMPurity.pt")
     model.eval()
 
     # Input to GBMPurity model
@@ -130,7 +130,9 @@ def main() -> None:
     purities = gbm_purity_inference(args.data_path)
     file_name = args.data_path.split("/")[-1]
     print(purities)
-    purities.to_csv(f"../results/GBMPurity_estimates-{file_name}", index=False)
+    save_path = f"./results/GBMPurity_estimates({file_name})"
+    print(f"Results saved to {save_path}")
+    purities.to_csv(save_path, index=False)
 
 if __name__ == "__main__":
     main()
