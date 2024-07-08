@@ -1,5 +1,5 @@
 """
-torch_model.py
+torch_models.py
 
 This module defines the GBMPurity class, a PyTorch neural network model for predicting GBM purity.
 The model consists of two hidden layers with dropout for regularization.
@@ -9,7 +9,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class GBMPurity(nn.Module):
+class MLP2h(nn.Module):
     def __init__(self, input_size, h1=32, h2=16, p_dropout=0.4):
         """
         Initialize the GBMPurity model.
@@ -20,7 +20,7 @@ class GBMPurity(nn.Module):
             h2 (int, optional): Number of neurons in the second hidden layer. Default is 16.
             p_dropout (float, optional): Dropout probability. Default is 0.4.
         """
-        super(GBMPurity, self).__init__()
+        super(MLP2h, self).__init__()
         self.fc1 = nn.Linear(input_size, h1)
         self.fc2 = nn.Linear(h1, h2)
         self.out = nn.Linear(h2, 1)

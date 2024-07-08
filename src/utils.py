@@ -14,20 +14,19 @@ Author:
     Date: 2024-07-08
 """
 
+import numpy as np
 
-def tpm(X: np.ndarray, lengths: np.ndarray) -> np.array:
+
+def tpm(X: np.ndarray, lengths: np.ndarray):
     """
-    Perform TPM normalization on the given counts using the provided gene lengths.
+    Calculate TPM (Transcripts Per Million) normalization for RNA-seq data.
 
-    Args:
-        counts (np.array): Array of gene counts.
-        lengths (np.array): Array of gene lengths.
+    Parameters:
+    X (np.ndarray): 2D array of raw read counts (sample x genes).
+    lengths (np.ndarray): 1D array of feature lengths (e.g., gene lengths).
 
     Returns:
-        np.array: TPM normalized values.
-
-    Raises:
-        ValueError: If TPM values do not sum to 1.
+    np.ndarray: TPM normalized values.
     """
     
     if X.shape[1] != lengths.shape[0]:
@@ -40,7 +39,7 @@ def tpm(X: np.ndarray, lengths: np.ndarray) -> np.array:
     scaling_factor = np.nansum(rpk, axis=1).reshape(-1, 1)
     
     # Calculate TPM
-    tpm = (rpk / scaling_factor) * 1e6
+    tpm = (rpk / scaling_factor) * 1e4 # Divide by 100 for better scale in machine learning.
     
     return tpm
 

@@ -25,8 +25,8 @@ from torch.utils.data import DataLoader, Dataset
 import torch.nn as nn
 
 from purity_dataset import singleCellData
-from torch_model import GBMPurity
-from utils import tpm, accuracy, ccc
+from torch_models import MLP2h
+from ..utils import tpm, accuracy, ccc
 
 np.random.seed(80085)
 torch.manual_seed(42)

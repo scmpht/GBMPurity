@@ -157,4 +157,4 @@ cython_debug/
 # Custom
 *.ipynb
 data/
-figures/
+results/
