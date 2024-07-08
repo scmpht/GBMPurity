@@ -156,5 +156,11 @@ cython_debug/
 
 # Custom
 *.ipynb
-data/
-results/
+
+# Ignore all files in data and results directories
+data/*
+results/*
+
+# Do not ignore .gitkeep files
+!data/.gitkeep
+!results/.gitkeep
