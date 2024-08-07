@@ -18,7 +18,7 @@ GBMPurity is a machine learning model designed to estimate the purity of bulk RN
 
 Our model is a multi-layer perceptron trained on simulated pseudobulk tumours of known purity. These simulations were created using the GBmap single-cell resource ([Ruiz-Moreno et al., 2022](https://doi.org/10.1101/2022.08.27.505439)).
 
-For a detailed description of GBMPurity's architecture, training methodology, and performance metrics, please refer to our [preprint](https://www.biorxiv.org/).
+For a detailed description of GBMPurity's architecture, training methodology, and performance metrics, please refer to our [preprint]([https://www.biorxiv.org/](https://www.biorxiv.org/content/10.1101/2024.07.11.602650v1)).
 
 <image src="./img/GBMPurity.png" width="100%"/>
 
