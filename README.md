@@ -34,7 +34,6 @@ However, if you would like to run GBMPurity locally or access the PyTorch model,
 1. Clone the repository:
     ```bash
     git clone https://github.com/yourusername/GBMPurity.git
-    cd GBMPurity
     ```
 
 2. Navigate to the cloned repository:
@@ -78,7 +77,7 @@ For inquiries, support, and feedback, please contact us at: scmpht@leeds.ac.uk
 
 This tool is free to use, but we kindly request that you cite our paper in any published work that uses GBMPurity:
 
-> Thomas, M., <i>et al.</i> (2024). GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data. *[Journal Name]*, *[Volume]*(Issue), [Page numbers]. DOI: [DOI number]
+> Thomas, M., <i>et al.</i> (2024). GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data. <i>BioRxiv</i> [Preprint]. DOI: doi:10.1101/2024.07.11.602650
 
 For use in bibliographic management software, you can use the following BibTeX entry:
 
