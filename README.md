@@ -77,7 +77,8 @@ For inquiries, support, and feedback, please contact us at: scmpht@leeds.ac.uk
 
 This tool is free to use, but we kindly request that you cite our paper in any published work that uses GBMPurity:
 
-> Thomas MPH, Ajaib S, Tanner G, Bulpitt AJ, Stead LF. GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data. bioRxiv. Preprint posted online July 16, 2024:2024.07.11.602650. doi:10.1101/2024.07.11.602650
+> Thomas MPH, Ajaib S, Tanner G, Bulpitt AJ, Stead LF. GBMPurity: A machine learning tool for estimating glioblastoma tumor purity from bulk RNA-sequencing data. Neuro Oncol. 2025;27(6):1458-1473. doi:10.1093/neuonc/noaf026
+
 
 
 For use in bibliographic management software, you can use the following BibTeX entry:
