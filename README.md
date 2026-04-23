@@ -77,18 +77,22 @@ For inquiries, support, and feedback, please contact us at: scmpht@leeds.ac.uk
 
 This tool is free to use, but we kindly request that you cite our paper in any published work that uses GBMPurity:
 
-> Thomas, M., <i>et al.</i> (2024). GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data. <i>BioRxiv</i> [Preprint]. DOI: doi:10.1101/2024.07.11.602650
+> Thomas MPH, Ajaib S, Tanner G, Bulpitt AJ, Stead LF. GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data. bioRxiv. Preprint posted online July 16, 2024:2024.07.11.602650. doi:10.1101/2024.07.11.602650
+
 
 For use in bibliographic management software, you can use the following BibTeX entry:
-
-    @article{Thomas2024GBMPurity,
-      title={GBMPurity: A Machine Learning Tool for Estimating Glioblastoma Tumour Purity from Bulk RNA-seq Data},
-      author={Thomas, M. and [Other Authors]},
-      journal={[Journal Name]},
-      volume={[Volume]},
-      number={[Issue]},
-      pages={[Page numbers]},
-      year={2024},
-      publisher={[Publisher]},
-      doi={[DOI number]}
-    }
+```
+  @article{Thomas2025GBMPurity,
+    author  = {Thomas, Morgan P H and Ajaib, Shoaib and Tanner, Georgette and Bulpitt, Andrew J and Stead, Lucy F},
+    title   = {{GBMPurity}: A Machine Learning Tool for Estimating Glioblastoma Tumor Purity from Bulk {RNA}-Sequencing Data},
+    journal = {Neuro-Oncology},
+    year    = {2025},
+    volume  = {27},
+    number  = {6},
+    pages   = {1458--1473},
+    month   = {06},
+    doi     = {10.1093/neuonc/noaf026},
+    url     = {https://doi.org/10.1093/neuonc/noaf026},
+    issn    = {1522-8517},
+  }
+```
